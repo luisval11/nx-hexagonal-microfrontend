@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import NxWelcome from './nx-welcome';
 
 import { Link, Route, Routes } from 'react-router-dom';
@@ -20,6 +19,7 @@ export function App() {
         <Route path="/" element={<NxWelcome title="shell" />} /> 
         <Route path="/financials" element={<Financials />} />
       </Routes>
+      <x-footer></x-footer>
     </React.Suspense>
   );
 }
