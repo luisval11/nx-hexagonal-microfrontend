@@ -1,0 +1,108 @@
+[
+    {
+        "id": 488302,
+        "name": "11 [18. Berlin Building]",
+        "description": "",
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488303,
+        "name": "12 [18. Berlin Building]",
+        "description": "",
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488304,
+        "name": "13 [Tenant 1]",
+        "description": null,
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488305,
+        "name": "14 [18. Berlin Building]",
+        "description": null,
+        "group": false,
+        "location": {
+            "id": 18195,
+            "name": "Texas"
+        },
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488306,
+        "name": "15 [18. Berlin Building]",
+        "description": null,
+        "group": false,
+        "location": null,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488307,
+        "name": "16 [10. Barcelona Building]",
+        "description": null,
+        "group": false,
+        "location": {
+            "id": 18195
+        },
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 314477,
+        "name": "19. Madrid Building-Tank Madrid [19. Madrid Building]",
+        "description": null,
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 12005,
+        "name": "1st Floor [Business Area]",
+        "description": "Socomec Diris, 3-phase meter, split core Comments: - This meter has been installed in the A2-4E board. - Before the installation we had to reconfigure the L12 and L34 loads ",
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488342,
+        "name": "20 [18. Berlin Building]",
+        "description": null,
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488343,
+        "name": "21 [18. Berlin Building]",
+        "description": null,
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488344,
+        "name": "22 [18. Berlin Building]",
+        "description": null,
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488346,
+        "name": "23 [18. Berlin Building]",
+        "description": null,
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488347,
+        "name": "24 [18. Berlin Building]",
+        "description": null,
+        "group": false,
+        "status": "ACCEPTED"
+    },
+    {
+        "id": 488365,
+        "name": "25 [18. Berlin Building]",
+        "description": null,
+        "group": false,
+        "status": "ACCEPTED"
+    }
+]

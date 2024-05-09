@@ -1,0 +1,30 @@
+[
+    {
+        "key": "ELECENERGY",
+        "name": "Electricity energy",
+        "nature": "ACCUMULATED",
+        "color": "#FFFF00",
+        "icon": "elec"
+    },
+    {
+        "key": "GASENERGY",
+        "name": "Gas energy",
+        "nature": "ACCUMULATED",
+        "color": "#FCFCFC",
+        "icon": "gas"
+    },
+    {
+        "key": "SOLARENERGY",
+        "name": "Solar energy",
+        "nature": "ACCUMULATED",
+        "color": "#FFA500",
+        "icon": "prod"
+    },
+    {
+        "key": "TEMP",
+        "name": "Temperature",
+        "nature": "INSTANTANEOUS",
+        "color": "#0000FF",
+        "icon": "temp"
+    }
+]

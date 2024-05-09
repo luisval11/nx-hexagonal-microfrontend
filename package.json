@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start:json-server": "json-server -p 4000 --routes server/routes.json --watch server/db.js --host 0.0.0.0 --middlewares server/middleware.js",
     "serve:local:all": "nx serve shell --devRemotes=financials"
   },
   "private": true,
@@ -43,6 +44,7 @@
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
     "jest-environment-node": "^29.4.1",
+    "json-server": "^0.17.4",
     "nx": "19.0.1",
     "prettier": "^2.6.2",
     "react-refresh": "^0.10.0",

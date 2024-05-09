@@ -1,0 +1,6 @@
+{
+    "/devices?start=:start&limit=:limit&param_key=EACTIVE&embed=LOCATION_WITH_NAME&include_from_parent_locations=true": "/devices?_page=:start&_limit=:limit",
+    "/devices/:id": "/devices/:id",
+    "/parameters/:id": "/parameters/:id",
+    "/readings?parameter=:parameter&device_id=:device_id&resolution=:resolution&operation=:operation&from=:from&to=:to": "/readings"
+}
