@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-hexagonal-microfrontend/domain": ["domain/src/index.ts"],
       "financials/Module": ["financials/src/remote-entry.ts"]
     }
   },
