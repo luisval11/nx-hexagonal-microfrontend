@@ -2,7 +2,9 @@
   "name": "@nx-hexagonal-microfrontend/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve:local:all": "nx serve shell --devRemotes=financials"
+  },
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.14.5",
