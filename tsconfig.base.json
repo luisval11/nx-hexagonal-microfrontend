@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@nx-hexagonal-microfrontend/domain": ["domain/src/index.ts"],
+      "@nx-hexagonal-microfrontend/ui-components": [
+        "ui-components/src/index.ts"
+      ],
       "financials/Module": ["financials/src/remote-entry.ts"]
     }
   },
