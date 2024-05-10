@@ -1,4 +1,4 @@
-import { EuroOutlined, HomeOutlined, MenuOutlined } from '@ant-design/icons';
+import { EuroOutlined, HomeOutlined, MenuOutlined, BulbOutlined } from '@ant-design/icons';
 import { Button, Card, Layout, Menu, theme } from 'antd';
 import React, { useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
@@ -6,12 +6,14 @@ import NxWelcome from './nx-welcome';
 
 const { Sider, Content } = Layout;
 const Financials = React.lazy(() => import('financials/Module'));
+const Consumption = React.lazy(() => import('consumption/Module'));
 
 const TITLES: { [key: string]: string } = {
   shell: 'Home',
   financials: 'Financials',
+  consumption: 'Consumption',
 };
-const getTitle = (module: string) => TITLES[module] || TITLES.shell;
+const getTitle = (module: string) => TITLES[module] || 'Home';
 
 const items = [
   {
@@ -22,6 +24,10 @@ const items = [
     key: 'financials',
     icon: <EuroOutlined />,
     label: <Link to="/financials">Financials</Link>,
+  }, {
+    key: 'consumption',
+    icon: <BulbOutlined />,
+    label: <Link to="/consumption">Consumption</Link>,
   },
 ]
 
@@ -73,6 +79,7 @@ export function App() {
               <Routes>
                 <Route path="/" element={<NxWelcome title="shell" />} />
                 <Route path="/financials" element={<Financials />} />
+                <Route path="/consumption" element={<Consumption />} />
               </Routes>
             </React.Suspense>
           </Content>

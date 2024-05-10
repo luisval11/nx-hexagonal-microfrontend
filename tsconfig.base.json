@@ -19,6 +19,7 @@
       "@nx-hexagonal-microfrontend/ui-components": [
         "ui-components/src/index.ts"
       ],
+      "consumption/Module": ["consumption/src/remote-entry.ts"],
       "financials/Module": ["financials/src/remote-entry.ts"]
     }
   },
