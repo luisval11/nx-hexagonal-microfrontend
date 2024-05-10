@@ -1,8 +1,8 @@
+import { EuroOutlined, HomeOutlined, MenuOutlined } from '@ant-design/icons';
+import { Button, Card, Layout, Menu, theme } from 'antd';
 import React, { useState } from 'react';
-import NxWelcome from './nx-welcome';
 import { Link, Route, Routes } from 'react-router-dom';
-import Icon, { MenuOutlined, EuroOutlined, HomeOutlined } from '@ant-design/icons';
-import { Button, Card, GetProps, Layout, Menu, theme } from 'antd';
+import NxWelcome from './nx-welcome';
 
 const { Sider, Content } = Layout;
 const Financials = React.lazy(() => import('financials/Module'));
@@ -18,7 +18,7 @@ const items = [
     key: 'shell',
     icon: <HomeOutlined />,
     label: <Link to="/">Home</Link>,
-  },{
+  }, {
     key: 'financials',
     icon: <EuroOutlined />,
     label: <Link to="/financials">Financials</Link>,
@@ -51,6 +51,7 @@ export function App() {
           <Menu
             theme="dark"
             mode="inline"
+            selectedKeys={[module]}
             items={items}
             onClick={({ key }) => setModule(key)}
           />
@@ -78,8 +79,6 @@ export function App() {
           <x-footer></x-footer>
         </Layout>
       </Layout>
-
-      
     </React.Suspense>
   );
 }
