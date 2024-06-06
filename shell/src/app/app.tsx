@@ -8,24 +8,29 @@ const { Sider, Content } = Layout;
 const Financials = React.lazy(() => import('financials/Module'));
 const Consumption = React.lazy(() => import('consumption/Module'));
 
+enum MODULES_KEYS {
+  SHELL = 'shell',
+  FINANCIALS = 'financials',
+  CONSUMPTION = 'consumption',
+}
+
 const TITLES: { [key: string]: string } = {
-  shell: 'Home',
-  financials: 'Financials',
-  consumption: 'Consumption',
+  [MODULES_KEYS.SHELL]: 'Home',
+  [MODULES_KEYS.FINANCIALS]: 'Financials',
+  [MODULES_KEYS.CONSUMPTION]: 'Consumption',
 };
 const getTitle = (module: string) => TITLES[module] || 'Home';
-
 const items = [
   {
-    key: 'shell',
+    key: MODULES_KEYS.SHELL,
     icon: <HomeOutlined />,
     label: <Link to="/">Home</Link>,
   }, {
-    key: 'financials',
+    key: MODULES_KEYS.FINANCIALS,
     icon: <EuroOutlined />,
     label: <Link to="/financials">Financials</Link>,
   }, {
-    key: 'consumption',
+    key: MODULES_KEYS.CONSUMPTION,
     icon: <BulbOutlined />,
     label: <Link to="/consumption">Consumption</Link>,
   },
@@ -36,7 +41,7 @@ export function App() {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
-  const [module, setModule] = useState('shell');
+  const [module, setModule] = useState(MODULES_KEYS.SHELL as string);
   return (
     <React.Suspense fallback={null}>
       <Layout>
